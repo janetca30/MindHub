@@ -1,0 +1,92 @@
+body{
+    background-color: #4fb190;
+}
+.banner{
+    background-image: url("../design1_image2.jpg");
+    background-size: contain;
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 60px;
+    }
+
+.logo{
+    width: 100px;
+    height: 100px;
+    border: 2px solid #d8e620;
+    background-color:chocolate;
+    border-radius: 20px;
+    position: absolute;
+    margin-top: -530px;
+    
+}   
+
+h1{
+    color: chocolate;
+    position: relative;
+    margin-left: 200px;
+    font-size: 40px;
+    margin-top: 5px;
+}
+
+nav{
+    position: absolute;
+    margin-left: 900px;
+    margin-top: -45px;
+    
+}
+
+.home,.about,.contact{
+    color: yellow;
+    border: 2.5px solid yellow;
+    background: chocolate;
+    text-decoration: none;
+    padding: 15px;
+    margin: 5px;
+    margin-top: -25px;
+    border-radius: 20px;
+     
+}
+
+nav :hover{
+    background: gray;
+}
+
+h2{
+    color: chocolate;
+    text-align: center;
+    position: relative;
+    margin-top: -3px;
+}
+
+.contenido,.contenido2,.contenido3{
+    position: absolute;
+    margin-left: 250px;
+    width: 800px;
+    color: yellow;
+    border: 2.5px solid yellow;
+    background: chocolate;
+    border-radius: 20px;
+
+}
+
+h3{
+    text-align: center;
+}
+
+p.sangria{
+    text-align: center;
+    color: rgb(10, 216, 10);
+    margin-left: 40px;
+}
+
+.contenido2>p{
+    width: 700px;
+    
+}
+
+p{
+    text-align: center;
+}
+

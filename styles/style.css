@@ -1,0 +1,90 @@
+h1{
+    font-style: italic;
+    
+}
+
+.banner{
+    background-image: url("../design1_image2.jpg");
+    background-size: contain;
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+.logo{
+    width: 120px;
+    height: 120px;
+    margin-top: 35px;
+    position: relative;
+}
+
+nav{
+    position: absolute;
+    margin-left: 1000px;
+    margin-top: -10px;
+    
+}
+
+.home,.about,.contact{
+    color: white;
+    border: 1.5px solid rgb(12, 12, 12);
+    background: #4472c4;
+    text-decoration: none;
+    padding: 5px;
+    margin: 3px;
+    box-shadow: 3px 3px #756f6f;
+}
+
+nav :hover{
+    background: #70ad47;
+}
+
+h2{
+    border: 1.5px solid rgb(12, 12, 12);
+    text-align: center;
+    position: relative;
+    margin-top: -190px;
+}
+
+.contenido{
+    position: absolute;
+    margin-left: 300px;
+    width: 1000px;
+    
+}
+
+h3{
+    font-style: italic;
+        
+}
+
+.contenido>p{
+    margin-top: -15px;
+    
+}
+
+.cont2{
+    font-style: normal;
+}
+
+p.sangria{
+    text-indent: 20px;
+    margin-left: 0px;
+    margin-top: -15px;
+}
+
+.contenido2{
+    position: absolute;
+    margin-left: 250px;
+    width: 1000px;
+}
+
+.contenido3{
+    position: absolute;
+    margin-left: 275px;
+    width: 1000px;
+}
+
