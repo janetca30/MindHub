@@ -46,11 +46,18 @@ nav{
     margin: 5px;
     margin-top: -25px;
     border-radius: 20px;
-     
+    
 }
 
 nav :hover{
     background: gray;
+}
+
+a:hover:not(:active){
+    background-color: #756f6f;
+}
+.active{
+    background-color: #70ad47;
 }
 
 h2{
