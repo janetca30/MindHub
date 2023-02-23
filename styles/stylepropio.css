@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 body{
     background-color: #4fb190;
@@ -40,7 +41,7 @@ h1{
     align-content: center;
     
 }
-.home,.about,.contact,.rules,.game{
+.home,.about,.contact,.rules,.game,.registration{
     color: yellow;
     border: 2.5px solid yellow;
     background: chocolate;
@@ -62,7 +63,7 @@ a:hover:not(:active){
 }
 
 .banner{
-    background-image: url("../design1_image2.jpg");
+    background-image: url("../img/design1_image2.jpg");
     background-size: contain;
     height: 400px;
     background-position: center;
@@ -224,19 +225,37 @@ table{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     column-width: 237.5px;
-    
-    
 }
-
 th,td{
-    
     height: 30px;
 }
-
 th{
     text-align: left;
 }
-
+.map{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+iframe{
+    margin: 10px;
+    width: 400px;
+    height: 300px;
+    border: 2px solid black;
+}
+.hmap{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-family: Arial, Helvetica, sans-serif;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
 .fecha{
     text-align: center;
     right: 2%;
@@ -275,6 +294,148 @@ th{
     margin-top: 20px;
 }
 
+.sregist{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    display: flex;
+    margin-top: 30px;
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-bottom: 20px;
+
+}
+.hreg{
+    font-weight: bold;
+}
+form{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+input{
+    background-color: #4fb190;
+    border-style: none none solid none;
+    border-color: black;
+    font-size: 22px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.f1,.f2,.f3,.f4,.f5{
+    display: flex;
+    margin-top: 15px;
+}
+#name{
+    width: 340px;
+    margin-right: 75px;
+}
+#lastname{
+    width: 350px;
+}
+#address{
+    width: 935px;
+}
+#city{
+    width: 505px;
+    margin-right: 75px;
+}
+#zcode{
+    width: 370px;
+}
+#birth{
+    margin-left: 15px;
+    height: 40px;
+}
+.pf4{
+    margin-left: 175px;
+    margin-right: 15px;
+}
+.f4_2{
+    display: flex;
+}
+#female,#male{
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 40px;
+}
+.pf5,.f5_1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+}
+#pre-school,#first,#second,#third,#room,#fifth{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.f6,.f7,.f8,.f9{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+    align-items: baseline;
+}   
+.pf6,.pf7,.pf8,.pf9{
+    font-weight: bold;
+    margin-top: 15px;
+}
+.f6_1,.f6_2,.f6_3,.f7_1,.f7_2,.f8_1,.f8_2,.f8_3,.f8_4{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: center;
+    align-content: center;
+}
+#aj-katzenmaier,#marjorie-phart,#greenbay,#north-elementary,
+#howard-ayeager,#south-elementary,
+#forward,#midfield,#defense,#goalkeeper,
+#youth-smal,#medium,#youth-medium,#large,#youth-large,#extra-large,#small{
+    margin-right: 10px;
+}
+#marjorie-phart{
+    margin-left: 150px;
+}
+#north-elementary{
+    margin-left: 210px;
+}
+#south-elementary{
+    margin-left: 130px;
+}
+#midfield,#goalkeeper{
+    margin-left:140px ;
+}
+#medium{
+    margin-left: 150px;
+}
+#large{
+    margin-left: 120px;
+}
+#extra-large{
+    margin-left: 145px;
+}
+.pf9_1{
+    margin-top: 15px;
+}
+.f9_1,.f9_2{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+}
+#parent{
+    width: 450px;
+}
+.submit{
+    width: 300px;
+    margin-left: 500px;
+    border: 2px solid black;
+    justify-content: center;
+}
+
 footer{
     background-color: chocolate;
     font-size: medium;
@@ -287,3 +448,611 @@ footer{
     height: 50px;
     margin-top: 20px;
 }
+
+@media only screen and (max-width:320px) {
+    nav{
+        flex-direction: column;
+        justify-content: center;
+    }
+    h1{
+        font-size: 26px;
+        text-align: center;
+    }
+    .viñeta{
+        justify-content: center;
+    }
+    .banner{
+        height: 130px;
+    }
+    .h2cont,.titulo{
+        font-size: 24px;
+    }
+    .contenido,.contenido2,.contenido3,.intro,.reglamento{
+        width: 300px;
+    }
+    .pcont,.pcont2{
+        text-align: center;
+    }
+    footer{
+        margin-bottom: 0px;
+        font-size: small;
+    }
+    .cont2{
+        font-size: 22px;
+    }    
+    .contenido2>p{
+        width: 290px;
+    }
+    .srules{
+        font-size: 16px;
+    }
+    .encabezado{
+        width: 300px;
+        text-align: center;
+    }
+    .subtitulo,.hmap{
+        font-size: 20px;
+        text-align: center;
+    }
+    .intro,.reglamento{
+        margin-top: 0;
+    }
+    .pjueg,.cir1{
+        width: 280px;
+        margin-left: 0px;
+    }
+    .sgame,.sregist{
+        width: 320px;
+        margin:0px;
+        font-size: 16px;
+    }
+    .pintro2,.pintro3{
+        margin: 0px;
+    }
+    table{
+        width: 320px;
+        font-size: 16px;
+    }
+    iframe{
+        margin: 2px;
+        width: 300px;
+        height: 150px;
+    }
+    .adic1,.adic2{
+        width:320px;
+        flex-direction: column;
+        font-size: 16px;
+        margin-top: 5px;
+        margin-left: 10px;
+    }
+    .tab,.padic1,.padic2,.padic3,.pad1,.pad2{
+        margin-top: 0px;
+    }
+    form{
+        width: 320px;
+        margin-top: 5px;
+        font-size: 16px;
+    }
+    .hreg{
+        margin-top: 10px;
+    }
+    .f1,.f2,.f3,.f5,.f6,.f7,.f8,.f9{
+        margin-top: 0px;
+        flex-direction: column;
+        text-align: center;
+    }
+    #name,#lastname,#address,#city,#zcode,#birth,#parent,#date{
+        margin: 10px;
+        font-size: 16px;
+        width: 300px;
+    }
+    .f4{
+        margin-top: 10px;
+        flex-direction: column;
+        text-align: center;
+    }
+    .f4_2{
+        margin-top: 10px;
+        flex-direction: row;
+        text-align: center;
+    }
+    .pf4{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    #female,#male{
+        height: 25px;
+    }
+    .f5_1{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        align-items: baseline;
+    }
+    .pf6,.pf8{
+        margin-top: 5px;
+        margin-left: 10px;
+    }
+    .f6_1,.f6_2,.f6_3,.f7_1,.f7_2,.f8_1,.f8_2,.f8_3,.f8_4{
+        margin-top: 5px;
+    }
+    #marjorie-phart{
+        margin-left: 20px;
+    }
+    #north-elementary{
+        margin-left: 60px;
+    }
+    #south-elementary{
+        margin-left: 7px;
+    }
+    #forward,#defense,#midfield,#goalkeeper{
+        margin-left:20px ;
+    }
+    #medium{
+        margin-left: 41px;
+    }
+    #large{
+        margin-left: 20px;
+    }
+    #extra-large{
+        margin-left: 36px;
+    }
+    .f9{
+        width: 320px;
+    }
+    .pf9,.pf9_1{
+        margin-top: 5px;
+        margin-left: 5px;
+        width: 300px;
+    }
+    .f9_1,.f9_2{
+        margin-top: 0px;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+    }
+    .submit{
+        width: 100px;
+        margin-left: 0px;
+        font-size: 18px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-left: 100px;
+    }
+}
+
+@media only screen and (min-width: 321px) and (max-width:576px) {
+    nav{
+        flex-direction: column;
+        justify-content: center;
+    }
+    h1{
+        font-size: 26px;
+        text-align: center;
+    }
+    .viñeta{
+        justify-content: center;
+    }
+    .banner{
+        height: 250px;
+    }
+    .h2cont,.titulo{
+        font-size: 24px;
+    }
+    .contenido,.contenido2,.contenido3,.intro,.reglamento{
+        width: 550px;
+    }
+    .pcont,.pcont2{
+        text-align: center;
+    }
+    footer{
+        margin-bottom: 0px;
+        font-size: small;
+    }
+    .cont2{
+        font-size: 22px;
+    }    
+    .contenido2>p{
+        width: 530px;
+    }
+    .srules{
+        font-size: 16px;
+    }
+    .encabezado{
+        width: 530px;
+        text-align: center;
+    }
+    .subtitulo,.hmap{
+        font-size: 20px;
+        text-align: center;
+    }
+    .intro,.reglamento{
+        margin-top: 0;
+    }
+    .pjuego,.cir1{
+        width: 520px;
+        margin-left: 0px;
+    }
+    .sgame,.sregist{
+        width: 550px;
+        margin:0px;
+        font-size: 16px;
+    }
+    .pintro2,.pintro3{
+        margin: 0px;
+    }
+    table{
+        width: 550px;
+        font-size: 16px;
+    }
+    .adic1,.adic2{
+        width:550px;
+        flex-direction: column;
+        font-size: 16px;
+        margin-top: 5px;
+        margin-left: 10px;
+    }
+    .tab,.padic1,.padic2,.padic3,.pad1,.pad2{
+        margin-top: 0px;
+    }
+    form{
+        width: 550px;
+        margin-top: 5px;
+        font-size: 16px;
+    }
+    .hreg{
+        margin-top: 10px;
+    }
+    .f1,.f2,.f3,.f5,.f6,.f7,.f8,.f9{
+        margin-top: 0px;
+        flex-direction: column;
+        text-align: center;
+    }
+    #name,#lastname,#address,#city,#zcode,#birth,#parent,#date{
+        margin-top: 10px;
+        margin-left: 50px;
+        margin-bottom: 10px;
+        font-size: 16px;
+        width: 480px;
+        flex-direction: column;
+    }
+    .f4{
+        margin-top: 10px;
+        flex-direction: column;
+        text-align: center;
+    }
+    .f4_2{
+        margin-top: 10px;
+        flex-direction: row;
+        text-align: center;
+        justify-content: center;
+    }
+    .pf4{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    #female,#male{
+        height: 25px;
+    }
+    .f5_1{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        align-items: baseline;
+    }
+    .pf6,.pf7,.pf8{
+        margin-top: 10px;
+        margin-left: 30px;
+    }
+    .f6_1,.f6_2,.f6_3,.f7_1,.f7_2,.f8_1,.f8_2,.f8_3,.f8_4{
+        margin-top: 5px;
+    }
+    #marjorie-phart{
+        margin-left: 60px;
+    }
+    #north-elementary{
+        margin-left: 100px;
+    }
+    #south-elementary{
+        margin-left: 47px;
+    }
+    #forward,#defense,#midfield,#goalkeeper{
+        margin-left:40px ;
+    }
+    #medium{
+        margin-left: 61px;
+    }
+    #large{
+        margin-left: 40px;
+    }
+    #extra-large{
+        margin-left: 56px;
+    }
+    .f9{
+        width: 550px;
+    }
+    .pf9,.pf9_1{
+        margin-top: 5px;
+        margin-left: 15px;
+        margin-right: 5px;
+        width: 550px;
+    }
+    .f9_1,.f9_2{
+        margin-top: 0px;
+        width: 550px;
+        display: flex;
+        flex-direction: column;
+    }
+    .submit{
+        width: 100px;
+        margin-left: 0px;
+        font-size: 18px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-left: 230px;
+    }
+}
+
+@media only screen and (min-width: 577px) and (max-width:768px) {
+    nav{
+        flex-direction: column;
+        justify-content: center;
+    }
+    h1{
+        font-size: 26px;
+        text-align: center;
+    }
+    .viñeta{
+        justify-content: center;
+    }
+    .banner{
+        height: 300px;
+    }
+    .h2cont,.titulo{
+        font-size: 24px;
+    }
+    .contenido,.contenido2,.contenido3,.intro,.reglamento{
+        width: 750px;
+    }
+    .pcont,.pcont2{
+        text-align: center;
+    }
+    footer{
+        margin-bottom: 0px;
+        font-size: small;
+    }
+    .cont2{
+        font-size: 22px;
+    }    
+    .contenido2>p{
+        width: 750px;
+    }
+    .srules{
+        font-size: 16px;
+    }
+    .encabezado{
+        width: 750px;
+        text-align: center;
+    }
+    .subtitulo,.hmap{
+        font-size: 20px;
+        text-align: center;
+    }
+    .intro,.reglamento{
+        margin-top: 0;
+    }
+    .pjuego,.cir1{
+        width: 710px;
+        margin-left: 40px;
+        margin-right: 20px;
+    }
+    .sgame,.sregist{
+        width: 750px;
+        margin:0px;
+        font-size: 16px;
+    }
+    .pintro2,.pintro3{
+        margin: 0px;
+    }
+    table{
+        margin-top: 20px;
+        width: 750px;
+        font-size: 16px;
+    }
+    .adic1,.adic2{
+        width:750px;
+        flex-direction: column;
+        font-size: 16px;
+        margin-top: 5px;
+        margin-left: 20px;
+    }
+    .tab,.padic1,.padic2,.padic3,.pad1,.pad2{
+        margin-top: 0px;
+    }
+    form{
+        width: 750px;
+        margin-top: 5px;
+        font-size: 16px;
+    }
+    .hreg{
+        margin-top: 10px;
+    }
+    .f1,.f2,.f3,.f5,.f6,.f7,.f8,.f9{
+        margin-top: 0px;
+        flex-direction: column;
+        text-align: center;
+    }
+    #name,#lastname,#address,#city,#zcode,#birth{
+        margin-top: 10px;
+        margin-left: 50px;
+        margin-bottom: 10px;
+        font-size: 16px;
+        width: 660px;
+        flex-direction: column;
+    }
+    .f4{
+        margin-top: 10px;
+        flex-direction: column;
+        text-align: center;
+    }
+    .f4_2{
+        margin-top: 10px;
+        flex-direction: row;
+        text-align: center;
+        justify-content: center;
+    }
+    .pf4{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    #female,#male{
+        height: 25px;
+    }
+    .f5_1{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        align-items: baseline;
+    }
+    .pf6,.pf7,.pf8{
+        margin-top: 10px;
+        margin-left: 30px;
+    }
+    .f6_1,.f6_2,.f6_3,.f7_1,.f7_2,.f8_1,.f8_2,.f8_3,.f8_4{
+        margin-top: 5px;
+    }
+    #marjorie-phart{
+        margin-left: 90px;
+    }
+    #north-elementary{
+        margin-left: 130px;
+    }
+    #south-elementary{
+        margin-left: 77px;
+    }
+    #forward,#defense,#midfield,#goalkeeper{
+        margin-left:60px ;
+    }
+    #medium{
+        margin-left: 101px;
+    }
+    #large{
+        margin-left: 80px;
+    }
+    #extra-large{
+        margin-left: 96px;
+    }
+    .f9{
+        width: 750px;
+    }
+    .pf9,.pf9_1{
+        margin-top: 5px;
+        margin-left: 15px;
+        margin-right: 15px;
+        width: 720px;
+    }
+    .f9_1,.f9_2{
+        margin-top: 0px;
+        width: 750px;
+        display: flex;
+        flex-direction: column;
+    }
+    #parent,#date{
+        margin-top: 10px;
+        margin-left: 50px;
+        margin-bottom: 10px;
+        font-size: 16px;
+        width: 660px;
+        flex-direction: column;
+    }
+    .submit{
+        width: 300px;
+        margin-top: 15px;
+        margin-left: 0px;
+        font-size: 18px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-left: 230px;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width:992px) {
+    nav{
+        flex-direction: column;
+        justify-content: center;
+    }
+    h1{
+        font-size: 26px;
+        text-align: center;
+    }
+    .viñeta{
+        justify-content: center;
+    }
+    .sgame,.sregist{
+        width: 950px;
+        margin-top: 20px;
+        margin-left: 40px;
+        margin-right: 70px;
+        margin-bottom: 15px;   
+    }
+    .tab{
+        margin-top: 30px;
+    }
+    .adic2{
+        width: 920px;
+        justify-content: space-evenly;
+    }
+    form{
+        width: 950px;
+        margin-top: 5px;
+    }
+    #name{
+        width: 250px;
+        margin-right: 75px;
+    }
+    #lastname{
+        width: 250px;
+    }
+    #address{
+        width: 746px;
+    }
+    #city{
+        width: 420px;
+        margin-right: 75px;
+    }
+    #zcode{
+        width: 260px;
+    }
+    #birth{
+        margin-left: 15px;
+        height: 40px;
+    }
+    .pf4{
+        margin-left: 85px;
+    }
+    .pf9_1{
+        margin-right: 15px;
+    }
+    .submit{
+        margin-left: 380px;
+    }
+}
+
